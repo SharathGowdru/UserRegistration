@@ -45,7 +45,7 @@ namespace UC_3_RegistrationForm
             {
                 Console.WriteLine("Please enter the valid mail id");
             }
-            if(p.validatePassWord(password))
+            if (p.validatePassWord(password))
             {
                 p.setPassword(password);
                 Console.WriteLine("Entered PAssword is Valid");
@@ -103,10 +103,8 @@ namespace UC_3_RegistrationForm
         }
         Boolean validatePassWord(string pword)
         {
-            Regex r = new Regex("^[a-zA-Z0-9]{8,}$");
+            Regex r = new Regex("(?=.*[A-Z])[a-zA-Z0-9]{8,}$");
             return r.IsMatch(pword);
         }
-
     }
 }
-
