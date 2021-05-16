@@ -103,8 +103,9 @@ namespace UC_3_RegistrationForm
         }
         Boolean validatePassWord(string pword)
         {
-            Regex r = new Regex("(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}$");
+            Regex r = new Regex("(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+=-])[a-zA-Z0-9!@#$%^&*()_+=-]{8,}$");
             return r.IsMatch(pword);
         }
+
     }
 }
