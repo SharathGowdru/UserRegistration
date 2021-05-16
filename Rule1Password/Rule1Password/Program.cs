@@ -8,12 +8,14 @@ namespace UC_3_RegistrationForm
         public string firstName = null;
         public string lastName = null;
         public string eMail;
+        public string passWord = null;
         static void Main(string[] args)
         {
             Program p = new Program();
             string fname = p.getFname();
             string lname = p.getLname();
             string email = p.getEmail();
+            string password = p.getPassword();
             if (p.validateName(fname))
             {
                 p.setFname(fname);
@@ -43,8 +45,15 @@ namespace UC_3_RegistrationForm
             {
                 Console.WriteLine("Please enter the valid mail id");
             }
-
-
+            if(p.validatePassWord(password))
+            {
+                p.setPassword(password);
+                Console.WriteLine("Entered PAssword is Valid");
+            }
+            else
+            {
+                Console.WriteLine("Please enter the valid mail id");
+            }
         }
         string getFname()
         {
@@ -73,6 +82,15 @@ namespace UC_3_RegistrationForm
         {
             eMail = email;
         }
+        string getPassword()
+        {
+            Console.WriteLine("Please enter the Password");
+            return Console.ReadLine();
+        }
+        void setPassword(string password)
+        {
+            passWord = password;
+        }
         Boolean validateName(string name)
         {
             Regex r = new Regex(@"[A-Z]+[a-z]*.{2,}");
@@ -81,8 +99,12 @@ namespace UC_3_RegistrationForm
         Boolean validateEmail(string email)
         {
             Regex r = new Regex("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$");
-
             return r.IsMatch(email);
+        }
+        Boolean validatePassWord(string pword)
+        {
+            Regex r = new Regex("^[a-zA-Z0-9]{8,}$");
+            return r.IsMatch(pword);
         }
 
     }
