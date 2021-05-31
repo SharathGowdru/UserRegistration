@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B71C1859-A3A5-40EA-9A40-A7A55E84BC16}</ProjectGuid>
+    <ProjectGuid>{1A067312-C22A-43F8-AC5D-E66E8AA408DC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>UnitTestingAll</RootNamespace>
-    <AssemblyName>UnitTestingAll</AssemblyName>
+    <RootNamespace>ParameterizedSample</RootNamespace>
+    <AssemblyName>ParameterizedSample</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
