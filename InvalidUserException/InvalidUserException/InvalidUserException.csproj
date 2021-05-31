@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1A067312-C22A-43F8-AC5D-E66E8AA408DC}</ProjectGuid>
+    <ProjectGuid>{DAB880DF-F78C-423F-B08E-8E45411660A2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ParameterizedSample</RootNamespace>
-    <AssemblyName>ParameterizedSample</AssemblyName>
+    <RootNamespace>InvalidUserException</RootNamespace>
+    <AssemblyName>InvalidUserException</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InvalidDetailUserException.cs" />
+    <Compile Include="Pattern.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

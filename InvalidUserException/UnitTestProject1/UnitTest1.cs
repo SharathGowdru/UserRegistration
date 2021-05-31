@@ -26,7 +26,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void ValidateEmail_ReturnTrue()
         {
-            string Email = Sharath@gmail.com";
+            string Email = "Sharath@gmail.com";
             Patterns pattern = new Patterns();
             bool result = pattern.IsValidEmail(Email);
             Assert.IsTrue(result);
@@ -34,7 +34,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void ValidatePhoneNo_ReturnTrue()
         {
-            string Phone = "91 9916633661";
+            string Phone = "91 9316633661";
             Patterns pattern = new Patterns();
             bool result = pattern.IsValidPhoneNo(Phone);
             Assert.IsTrue(result);
